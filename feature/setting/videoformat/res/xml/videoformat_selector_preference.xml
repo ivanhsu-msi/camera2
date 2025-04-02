@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="video_format_selector">
+
+    <Preference
+        android:layout="@layout/videoformat_description"
+        android:order="10"
+        android:enabled="false"
+        android:persistent="false">
+
+    </Preference>
+</PreferenceScreen>

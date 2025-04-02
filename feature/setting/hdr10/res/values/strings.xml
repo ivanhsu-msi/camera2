@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hdr10_title">HDR10+</string>
+    <string name="hdr10_content_description">@string/hdr10_title</string>
+</resources>

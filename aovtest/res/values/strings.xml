@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">AOVTestApp</string>
+    <string name="confirm">Confirm</string>
+
+    <string-array name="mode_list">
+        <item>Camera off</item>
+        <item>Camera on/Display off</item>
+        <item>Camera on/Display on</item>
+    </string-array>
+
+    <string-array name="id_list">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="size_list">
+        <item>160 X 120</item>
+        <item>320 X 240</item>
+        <item>640 X 480</item>
+    </string-array>
+
+    <string-array name="fps_list">
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="fd_list">
+        <item>NONE</item>
+        <item>SIMPLE</item>
+        <item>FULL</item>
+    </string-array>
+
+</resources>

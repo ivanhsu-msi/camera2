@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="accessibility_zm_on">Zoom on</string>
+    <string name="accessibility_zm_off">Zoom off</string>
+    <string name="zm_zoom">Zoom</string>
+</resources>

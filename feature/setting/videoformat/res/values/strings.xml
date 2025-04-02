@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="video_format_title">Video Format</string>
+    <string name="video_format_content_description" translatable="false">@string/video_format_title</string>
+    <string name="format_high_efficiency" translatable="false">High efficiency</string>
+    <string name="format_most_compatible" translatable="false">Most compatible</string>
+    <string name="format_description" translatable="false">High efficiency will always use HEVC format to reduce file size. Most compatible will always use H.264/MPEG-4 or other format to support video playing on old devices. \n\nIn some cases high efficiency will always be used, such as the cases that video records as very high resolution or frame rate.</string>
+</resources>

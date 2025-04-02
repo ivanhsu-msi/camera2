@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="object_tracking_title">Tracking AF</string>
+    <string name="object_tracking_content_description">Double touch to select object</string>
+    <string name="object_tracking_warning">No target object, please try again</string>
+</resources>

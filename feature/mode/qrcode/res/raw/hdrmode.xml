@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin
+    id="qrcodeplugin"
+    name="qrcode"
+    version="1">
+
+    <extension
+        id="qrcode"
+        name="qrcode"
+        class="com.mediatek.camera.feature.mode.qrcode.QRcodeModeEntry"
+        plugin-id="cameraplugin"
+        point-id="FeatureEntryBase">
+    </extension>
+</plugin>

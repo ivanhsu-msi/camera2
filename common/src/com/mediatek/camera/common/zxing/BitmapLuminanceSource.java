@@ -1,0 +1,34 @@
+package com.mediatek.camera.common.zxing;
+
+import android.graphics.Bitmap;
+
+import com.mediatek.camera.common.zxing.core.LuminanceSource;
+import com.mediatek.camera.common.zxing.core.RGBLuminanceSource;
+
+
+/***
+ *  Created by SWY
+ */
+public class BitmapLuminanceSource extends LuminanceSource {
+
+    RGBLuminanceSource source;
+
+    public BitmapLuminanceSource(Bitmap bitmap) {
+        super(bitmap.getWidth(), bitmap.getHeight());
+        int[] data = new int[bitmap.getWidth() * bitmap.getHeight()];
+        bitmap.getPixels(data, 0, bitmap.getWidth(), 0, 0, bitmap.getWidth(), bitmap.getHeight());
+        source = new RGBLuminanceSource(bitmap.getWidth(), bitmap.getHeight(), data);
+    }
+
+    @Override
+    public byte[] getMatrix() {
+        // 返回我们生成好的像素数据
+        return source.getMatrix();
+    }
+
+    @Override
+    public byte[] getRow(int y, byte[] row) {
+        return source.getRow(y, row);
+    }
+
+}

@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ccc"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/white"
+        android:dividerPadding="1dp"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:showDividers="middle|beginning|end">
+
+        <RelativeLayout
+            android:id="@+id/ll_camera_id_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_camera_id_key"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="CameraId"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+
+            <Spinner
+                android:id="@+id/sp_camera_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_camera_id_key"
+                android:layout_alignBottom="@id/tv_camera_id_key"
+                android:layout_toRightOf="@+id/tv_camera_id_key"
+                android:entries="@array/id_list"
+                android:padding="8dp"
+                android:popupBackground="@android:color/white"
+                android:spinnerMode="dropdown"
+                android:textColor="@android:color/black" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_camera_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_camera_size_key"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Size"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+
+            <Spinner
+                android:id="@+id/sp_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_camera_size_key"
+                android:layout_alignBottom="@id/tv_camera_size_key"
+                android:layout_toRightOf="@+id/tv_camera_size_key"
+                android:entries="@array/size_list"
+                android:padding="8dp"
+                android:popupBackground="@android:color/white"
+                android:spinnerMode="dropdown"
+                android:textColor="@android:color/black" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_fps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_camera_fps_key"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Fps"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+
+            <Spinner
+                android:id="@+id/sp_fps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_camera_fps_key"
+                android:layout_alignBottom="@id/tv_camera_fps_key"
+                android:layout_toRightOf="@+id/tv_camera_fps_key"
+                android:entries="@array/fps_list"
+                android:padding="8dp"
+                android:popupBackground="@android:color/white"
+                android:spinnerMode="dropdown"
+                android:textColor="@android:color/black" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_fd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_camera_fd_key"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Fd"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+
+            <Spinner
+                android:id="@+id/sp_fd_modes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_camera_fd_key"
+                android:layout_alignBottom="@id/tv_camera_fd_key"
+                android:layout_toRightOf="@+id/tv_camera_fd_key"
+                android:entries="@array/fd_list"
+                android:padding="8dp"
+                android:popupBackground="@android:color/white"
+                android:spinnerMode="dropdown"
+                android:textColor="@android:color/black" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/ll_gaze"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_camera_gaze_key"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Gaze"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+
+            <Switch
+                android:id="@+id/switch_gaze"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_camera_gaze_key"
+                android:layout_alignBottom="@id/tv_camera_gaze_key"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/tv_camera_gaze_key"
+                android:padding="8dp"
+                android:popupBackground="@android:color/white"
+                android:spinnerMode="dropdown"
+                android:textColor="@android:color/black" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_qr_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_camera_qr_code_key"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="QrCode"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+
+            <Switch
+                android:id="@+id/switch_qr_code_modes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_camera_qr_code_key"
+                android:layout_alignBottom="@id/tv_camera_qr_code_key"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/tv_camera_qr_code_key"
+                android:padding="8dp"
+                android:popupBackground="@android:color/white"
+                android:spinnerMode="dropdown"
+                android:textColor="@android:color/black" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_gesture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_camera_gesture_key"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Gesture"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+
+            <Switch
+                android:id="@+id/switch_gestures"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_camera_gesture_key"
+                android:layout_alignBottom="@id/tv_camera_gesture_key"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/tv_camera_gesture_key"
+                android:padding="8dp"
+                android:popupBackground="@android:color/white"
+                android:spinnerMode="dropdown"
+                android:textColor="@android:color/black" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_camera_display_key"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Display"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+
+            <Switch
+                android:id="@+id/switch_display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_camera_display_key"
+                android:layout_alignBottom="@id/tv_camera_display_key"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/tv_camera_display_key"
+                android:padding="8dp"
+                android:popupBackground="@android:color/white"
+                android:spinnerMode="dropdown"
+                android:textColor="@android:color/black" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_camera_mode_key"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Mode"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+
+            <Switch
+                android:id="@+id/switch_modes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_camera_mode_key"
+                android:layout_alignBottom="@id/tv_camera_mode_key"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/tv_camera_mode_key"
+                android:padding="8dp"
+                android:popupBackground="@android:color/white"
+                android:spinnerMode="dropdown"
+                android:textColor="@android:color/black" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/ll_apply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_camera_apply_key"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Apply"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+
+            <Switch
+                android:id="@+id/switch_applied"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_camera_apply_key"
+                android:layout_alignBottom="@id/tv_camera_apply_key"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/tv_camera_apply_key"
+                android:padding="8dp"
+                android:checked="true"
+                android:popupBackground="@android:color/white"
+                android:spinnerMode="dropdown"
+                android:textColor="@android:color/black" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Info : "
+            android:textColor="@android:color/black"
+            android:textSize="16dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="480px">
+
+            <com.mediatek.aovtestapp.view.YUVRenderView
+                android:id="@+id/iv_preview"
+                android:layout_width="640px"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:id="@+id/ll_switch_time"
+                android:layout_width="50dp"
+                android:layout_height="32dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/iv_preview"
+                android:minWidth="100dp"
+                android:visibility="invisible"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="SwitchTime : "
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv_switch_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:text="300 ms"
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_fd_result"
+                android:layout_width="50dp"
+                android:layout_height="32dp"
+                android:layout_below="@+id/ll_switch_time"
+                android:layout_alignParentEnd="true"
+                android:visibility="invisible"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/iv_preview"
+                android:minWidth="100dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="FDResult : "
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv_fd_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:text="[0,0,0,0]"
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_qr_code_result"
+                android:layout_width="50dp"
+                android:layout_height="32dp"
+                android:layout_below="@+id/ll_fd_result"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/iv_preview"
+                android:minWidth="100dp"
+                android:visibility="invisible"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="QRCode : "
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv_qr_code_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:text="hello"
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_gesture_result"
+                android:layout_width="50dp"
+                android:layout_height="32dp"
+                android:layout_below="@+id/ll_qr_code_result"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:visibility="invisible"
+                android:layout_toRightOf="@+id/iv_preview"
+                android:minWidth="100dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Gesture : "
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv_gesture_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:text="up"
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_gaze_result"
+                android:layout_width="50dp"
+                android:layout_height="32dp"
+                android:visibility="invisible"
+                android:layout_below="@+id/ll_gesture_result"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/iv_preview"
+                android:minWidth="100dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Gaze : "
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv_gaze_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:text="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_multi_result"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/iv_preview"
+                android:minWidth="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/id_fd_nums"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="16dp"
+                    android:text="FD nums : 0"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_gaze_detected"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="16dp"
+                    android:text="GazeDetect : false"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_switch_time_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="16dp"
+                    android:text="SwitchTime : 0 ms"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_multi_results"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

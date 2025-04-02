@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2016 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="video_format_title">"视频格式"</string>
+    <string name="video_format_content_description" translatable="false">@string/video_format_title</string>
+    <string name="format_high_efficiency" translatable="false">高效</string>
+    <string name="format_most_compatible" translatable="false">兼容性最好</string>
+    <string name="format_description" translatable="false">“高效”将使用HEVC格式拍摄视频，可以缩小文件大小。“兼容性最好”将使用H.264/MPEG-4或其他格式拍摄视频，可以支持在更多设备播放。\n\n但高分辨率或高帧率场景，会使用“高效”进行拍摄。</string>
+
+</resources>

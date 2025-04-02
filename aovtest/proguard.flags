@@ -1,0 +1,4 @@
+-keep class * extends androidx.appcompat.app.AppCompatActivity {
+   *;
+}
+

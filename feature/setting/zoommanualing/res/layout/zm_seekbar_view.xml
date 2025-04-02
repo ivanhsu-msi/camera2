@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="@string/zm_zoom"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/color_seekbar"/>
+
+        <SeekBar
+            android:id="@+id/zm_zoom_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="5dp"
+            android:maxHeight="5dp"
+            android:progressDrawable="@drawable/seekbar_bg"/>
+    </LinearLayout>
+
+</LinearLayout>
